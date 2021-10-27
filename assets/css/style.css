@@ -93,7 +93,7 @@
 .main-graphic {
   margin: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   text-align: center;
   background-color: blueviolet;
@@ -101,9 +101,31 @@
   width: auto;
 }
 
-.main-graphic-text {
-  color: white;
-  margin-top: 45px;
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+  margin: auto;
+}
+
+.icon {
+  margin: 20px 0 20px 350px;
+  width: 10%;
+  height: 10%;
+}
+
+.icon2 {
+  margin: 20px 350px 20px 0;
+  width: 10%;
+  height: 10%;
+}
+
+.hub {}
+
+.hub-img {
+  width: 50%;
+  height: 50%;
 }
 
 .punchline {
@@ -164,6 +186,8 @@
 .first-section-graphics {
   width: 30vw;
   margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
 }
 
 .tile-top-left {
@@ -248,4 +272,17 @@
   -o-border-radius: 5px;
 }
 
-.tile-top-right {}
+.tile-top-right {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 169px;
+  margin-right: 50px;
+  background-color: cornsilk;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.065), 0 2px 2px hsl(0deg 0% 0% / 0.065), 0 4px 4px hsl(0deg 0% 0% / 0.065), 0 8px 8px hsl(0deg 0% 0% / 0.065), 0 16px 16px hsl(0deg 0% 0% / 0.065);
+}

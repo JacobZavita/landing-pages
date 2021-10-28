@@ -119,7 +119,12 @@ section {
 
     &:hover,
     &:focus {
-      transform: scale(1)    ;
+      transform: scale(1);
+
+      .featured__details {
+        opacity: 1;
+        text-shadow: 0 0 2em rgba(#fff, 1);
+      }
     } 
 
     &::after {
